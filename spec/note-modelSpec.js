@@ -1,9 +1,7 @@
-(function() {
-  function testCreateNote(text) {
-    var note = new Note(text);
+function testCreateNote(text) {
+  var note = new Note(text);
 
-    assert.isTrue(note.view === text)
-  }
+  assert.isTrue(note.view === text)
+}
 
   testCreateNote("Hello world!");
-})();
