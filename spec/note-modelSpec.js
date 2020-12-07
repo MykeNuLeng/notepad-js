@@ -4,4 +4,4 @@ function testCreateNote(text) {
   assert.isTrue(note.view === text)
 }
 
-  testCreateNote("Hello world!");
+testCreateNote("Hello world!");
