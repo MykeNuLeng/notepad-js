@@ -7,6 +7,12 @@ function displayNotes() {
   el[0].innerHTML = noteListView.display();
 }
 
+function addNotes(note) {
+  noteList.addNote(note);
+
+  displayNotes();
+}
+
 function ready(fn) {
   if (document.readyState != 'loading'){
     fn();
