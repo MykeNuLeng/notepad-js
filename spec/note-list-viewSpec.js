@@ -12,7 +12,7 @@ function testTwoNotes() {
   noteListView.noteList.addNote("Im looking dummy thicc")
   noteListView.noteList.addNote("Honestly, wheres the lie")
 
-  assert.isTrue(noteListView.display() === '<ul><li><div>Im looking dummy thicc</div></li><li><div>Honestly, wheres the lie</div></li></ul>')
+  assert.isEqual(noteListView.display(), '<ul><li><div>Im looking dummy thicc</div></li><li><div>Honestly, wheres the lie</div></li></ul>')
 }
 
 testTwoNotes()
