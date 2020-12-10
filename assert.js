@@ -2,7 +2,7 @@
 var assert = {
   isTrue: function(assertionToCheck) {
     if(!assertionToCheck) {
-      throw new Error("Assertion failed: " + assertionToCheck + " is not true");
+      console.log("Assertion failed: " + assertionToCheck + " is not true");
     };
     console.log('Passed!')
   },
@@ -11,7 +11,7 @@ var assert = {
     if(a !== b) {
       console.log("a:" + a);
       console.log("b:" + b);
-      throw Error("Assertion failed: " + a + "doesn't equal" + b);
+      console.log("Assertion failed: " + a + "doesn't equal" + b);
     };
     console.log('Passed!')
     console.log(a)
